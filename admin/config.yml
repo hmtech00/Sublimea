@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.227.0/schema/sveltia-cms.json
+# Painel de administração da Sublimaê (Sveltia CMS).
+# Cada alteração salva no painel vira um commit no GitHub.
+
+backend:
+  name: github
+  repo: hmtech00/Sublimea
+  branch: main
+
+media_folder: /assets/img/produtos
+public_folder: /assets/img/produtos
+
+# Fotos enviadas pelo painel são convertidas para WebP e reduzidas
+media_libraries:
+  default:
+    config:
+      max_file_size: 20000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1400
+          height: 1400
+
+collections:
+  - name: produtos
+    label: Produtos
+    label_singular: Produto
+    description: Produtos exibidos no catálogo do site. Arraste para mudar a ordem. Não inclua preços.
+    file: /dados/produtos.json
+    identifier_field: nome
+    summary: '{{codigo}}: {{nome}}'
+    thumbnail: imagem
+    fields:
+      - name: codigo
+        label: Código de referência
+        hint: 'Ex.: CAN-061. Use um código que ainda não exista no catálogo.'
+        pattern: ['^[A-Z0-9]+(-[A-Z0-9]+)*$', 'Use letras maiúsculas, números e hífen. Ex.: CAN-061']
+      - name: nome
+        label: Nome do produto
+      - name: categoria
+        label: Categoria
+        widget: relation
+        collection: categorias
+        value_field: nome
+        search_fields: [nome]
+        display_fields: [nome]
+      - name: descricao
+        label: Descrição
+        widget: text
+        required: false
+        hint: Texto curto sobre o produto e a personalização. Não inclua preços.
+      - name: imagem
+        label: Foto
+        widget: image
+        hint: JPG, PNG ou WebP. A foto é convertida para WebP e reduzida automaticamente.
+      - name: tamanhos
+        label: Tamanhos e opções
+        widget: list
+        required: false
+        hint: 'Ex.: 15 × 15 cm, Infantil, Adulto. Deixe vazio se não houver.'
+      - name: apresentacao
+        label: Apresentação
+        required: false
+        hint: 'Ex.: Kit com 10 unidades, Conjunto. Deixe vazio se não houver.'
+
+  - name: categorias
+    label: Categorias
+    label_singular: Categoria
+    description: Categorias do catálogo, na ordem em que aparecem no site. Categorias sem produtos ficam ocultas.
+    file: /dados/categorias.json
+    identifier_field: nome
+    fields:
+      - name: nome
+        label: Nome da categoria
