@@ -141,7 +141,7 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .hero h1 span { display: inline; color: var(--blue); background: linear-gradient(transparent 72%, rgba(255, 210, 60, .55) 72%, rgba(255, 210, 60, .55) 92%, transparent 92%); }
 .lead { font-size: clamp(17px, 1.6vw, 19px); max-width: 540px; margin-bottom: 30px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
-.hero-insta { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.hero-insta { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
 .hero-insta a { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--pink); text-decoration: none; }
 .hero-insta a:hover { text-decoration: underline; }
 .hero-insta svg { width: 18px; height: 18px; }
@@ -270,7 +270,8 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .about-list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 22px 0 28px; }
 .about-list li { padding: 6px 12px; border-radius: 999px; background: var(--bg-soft); border: 1px solid var(--line); font-size: 14px; font-weight: 600; color: var(--ink); }
 .about-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.ig-ico { width: 18px; height: 18px; }
+.ig-ico, .tt-ico { width: 18px; height: 18px; }
+.cta-actions .cta-insta + .cta-insta { margin-top: -8px; }
 
 /* ---------- CTA ---------- */
 .cta-section { padding-top: 0; }
