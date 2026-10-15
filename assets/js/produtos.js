@@ -1,7 +1,7 @@
-/* Catálogo Sublimaê — dados extraídos do catálogo original.
+/* Catálogo Sublimaê: dados extraídos do catálogo original.
    Para adicionar um produto: coloque as imagens em assets/img/produtos/
    (<codigo>.webp e <codigo>-sm.webp) e acrescente um objeto abaixo.
-   Este arquivo NÃO contém preços — não adicione valores aqui. */
+   Este arquivo NÃO contém preços; não adicione valores aqui. */
 window.SUBLIMAE_CATEGORIAS = [
   "Torcedores & esportes",
   "Personalizadas",
@@ -34,7 +34,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-002",
-    "nome": "Caneca Esquadrão • Bahia Masculino",
+    "nome": "Caneca Esquadrão Bahia Masculino",
     "categoria": "Torcedores & esportes",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-002",
@@ -43,7 +43,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-003",
-    "nome": "Caneca Esquadrão • Bahia Feminino",
+    "nome": "Caneca Esquadrão Bahia Feminino",
     "categoria": "Torcedores & esportes",
     "descricao": "Caneca personalizada com tema esportivo, conforme arte da foto de referência.",
     "imagem": "assets/img/produtos/can-003",
@@ -52,7 +52,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-004",
-    "nome": "Caneca Vitória • Esporte Clube Vitória",
+    "nome": "Caneca Vitória Esporte Clube Vitória",
     "categoria": "Torcedores & esportes",
     "descricao": "Caneca temática do Vitória, com identidade rubro-negra e personalização conforme a arte.",
     "imagem": "assets/img/produtos/can-004",
@@ -79,7 +79,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-007",
-    "nome": "Caneca Personalizada • Foto",
+    "nome": "Caneca Personalizada Foto",
     "categoria": "Personalizadas",
     "descricao": "Caneca personalizada com foto, nome e composição visual conforme a arte escolhida.",
     "imagem": "assets/img/produtos/can-007",
@@ -97,7 +97,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-009",
-    "nome": "Caneca Ballet • Dança",
+    "nome": "Caneca Ballet Dança",
     "categoria": "Personalizadas",
     "descricao": "Caneca personalizada com foto e tema de ballet, ideal para homenagem, lembrança ou presente.",
     "imagem": "assets/img/produtos/can-009",
@@ -106,7 +106,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-010",
-    "nome": "Caneca Frase • Fé e Força",
+    "nome": "Caneca Frase Fé e Força",
     "categoria": "Personalizadas",
     "descricao": "Caneca com frase motivacional personalizada, ideal para presente e inspiração.",
     "imagem": "assets/img/produtos/can-010",
@@ -133,7 +133,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-013",
-    "nome": "Caneca Frase • Calada Vence",
+    "nome": "Caneca Frase Calada Vence",
     "categoria": "Personalizadas",
     "descricao": "Caneca personalizada com frase motivacional em destaque.",
     "imagem": "assets/img/produtos/can-013",
@@ -142,7 +142,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-014",
-    "nome": "Caneca Gatinha • Medicina",
+    "nome": "Caneca Gatinha Medicina",
     "categoria": "Personalizadas",
     "descricao": "Caneca divertida com gatinha em tema de medicina e enfermagem.",
     "imagem": "assets/img/produtos/can-014",
@@ -151,7 +151,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-015",
-    "nome": "Coleção Evangélica • Fé e Esperança",
+    "nome": "Coleção Evangélica Fé e Esperança",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-015",
@@ -187,7 +187,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-019",
-    "nome": "Caneca Nossa Senhora Aparecida • Floral",
+    "nome": "Caneca Nossa Senhora Aparecida Floral",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-019",
@@ -196,7 +196,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-020",
-    "nome": "Coleção Orixás • Linha Completa",
+    "nome": "Coleção Orixás Linha Completa",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-020",
@@ -205,7 +205,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-021",
-    "nome": "Caneca Nala • Personalizada",
+    "nome": "Caneca Nala Personalizada",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-021",
@@ -214,7 +214,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-022",
-    "nome": "Caneca Leão • Coroa",
+    "nome": "Caneca Leão Coroa",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-022",
@@ -223,7 +223,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-023",
-    "nome": "Caneca Leão • Perfil",
+    "nome": "Caneca Leão Perfil",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-023",
@@ -232,7 +232,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-024",
-    "nome": "Caneca Xangô • Orixá",
+    "nome": "Caneca Xangô Orixá",
     "categoria": "Religiosas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-024",
@@ -241,7 +241,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-028",
-    "nome": "Caneca Auxílio Fraterno • Luz da Alma",
+    "nome": "Caneca Auxílio Fraterno Luz da Alma",
     "categoria": "Religiosas",
     "descricao": "Caneca personalizada com tema de auxílio fraterno e luz da alma.",
     "imagem": "assets/img/produtos/can-028",
@@ -250,7 +250,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-029",
-    "nome": "Coleção Espiritismo • Canecas Personalizadas",
+    "nome": "Coleção Espiritismo Canecas Personalizadas",
     "categoria": "Coleção Espiritismo",
     "descricao": "Coleção de canecas personalizadas com nomes e temas espíritas.",
     "imagem": "assets/img/produtos/can-029",
@@ -259,7 +259,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-030",
-    "nome": "Caneca Divaldo Franco • Orador e Médium",
+    "nome": "Caneca Divaldo Franco Orador e Médium",
     "categoria": "Religiosas",
     "descricao": "Caneca personalizada com homenagem a Divaldo Franco.",
     "imagem": "assets/img/produtos/can-030",
@@ -286,7 +286,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-033",
-    "nome": "Caneca Corporativa • Grupo Solução & Cia",
+    "nome": "Caneca Corporativa Grupo Solução & Cia",
     "categoria": "Corporativas",
     "descricao": "Caneca personalizada para uso corporativo, com identidade visual e comunicação da empresa.",
     "imagem": "assets/img/produtos/can-033",
@@ -295,7 +295,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-034",
-    "nome": "Caneca Corporativa • UniVida Laboratório",
+    "nome": "Caneca Corporativa UniVida Laboratório",
     "categoria": "Corporativas",
     "descricao": "Caneca personalizada com identidade visual do Laboratório UniVida.",
     "imagem": "assets/img/produtos/can-034",
@@ -304,16 +304,16 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-035",
-    "nome": "Caneca Corporativa • CliFeliz",
+    "nome": "Caneca Corporativa CliFeliz",
     "categoria": "Corporativas",
-    "descricao": "Caneca personalizada com identidade visual da CliFeliz — Medicina e Odontologia.",
+    "descricao": "Caneca personalizada com identidade visual da CliFeliz: Medicina e Odontologia.",
     "imagem": "assets/img/produtos/can-035",
     "largura": 768,
     "altura": 1365
   },
   {
     "codigo": "CAN-036",
-    "nome": "Coleção Natalina • Canecas Natalinas",
+    "nome": "Coleção Natalina Canecas Natalinas",
     "categoria": "Coleção Natal",
     "descricao": "Coleção de canecas personalizadas para celebrar o Natal.",
     "imagem": "assets/img/produtos/can-036",
@@ -322,7 +322,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-037",
-    "nome": "Caneca Profissões • Personalizada",
+    "nome": "Caneca Profissões Personalizada",
     "categoria": "Profissões",
     "descricao": "Caneca personalizada para profissionais, com opções de diferentes profissões.",
     "imagem": "assets/img/produtos/can-037",
@@ -367,7 +367,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-042",
-    "nome": "Caneca Vovô & Vovó Cheguei • Interativa",
+    "nome": "Caneca Vovô & Vovó Cheguei Interativa",
     "categoria": "Datas & presentes",
     "descricao": "Caneca personalizada para anunciar uma nova aventura à família, com ultrassom.",
     "imagem": "assets/img/produtos/can-042",
@@ -385,7 +385,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-044",
-    "nome": "Caneca Divertida • Boca",
+    "nome": "Caneca Divertida Boca",
     "categoria": "Coleções & Campanhas",
     "descricao": "Referência do portfólio Sublimaê. Personalização conforme arte, nome, foto ou tema escolhido.",
     "imagem": "assets/img/produtos/can-044",
@@ -466,7 +466,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAN-060",
-    "nome": "Kit Caneca • Feliz Aniversário",
+    "nome": "Kit Caneca Feliz Aniversário",
     "categoria": "Personalizadas",
     "descricao": "Kit presente de aniversário com caneca personalizada, almochaveiro e embalagem decorativa. Uma opção carinhosa para comemorar.",
     "imagem": "assets/img/produtos/can-060",
@@ -513,7 +513,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "AZU-003",
-    "nome": "Azulejo Personalizado • Maternidade",
+    "nome": "Azulejo Personalizado Maternidade",
     "categoria": "Azulejos",
     "descricao": "Azulejo personalizado com nome, foto e informações de nascimento.",
     "imagem": "assets/img/produtos/azu-003",
@@ -532,7 +532,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "AZU-004",
-    "nome": "Azulejo Interativo • Ultrassom Morfológico",
+    "nome": "Azulejo Interativo Ultrassom Morfológico",
     "categoria": "Azulejos",
     "descricao": "Azulejo personalizado para registrar o ultrassom morfológico e a chegada da menina.",
     "imagem": "assets/img/produtos/azu-004",
@@ -551,7 +551,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "AZU-005",
-    "nome": "Azulejo Personalizado • Nascimento",
+    "nome": "Azulejo Personalizado Nascimento",
     "categoria": "Azulejos",
     "descricao": "Azulejo personalizado para registrar o nascimento do bebê.",
     "imagem": "assets/img/produtos/azu-005",
@@ -570,7 +570,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "AZU-006",
-    "nome": "Azulejo Outubro Rosa • Prevenção",
+    "nome": "Azulejo Outubro Rosa Prevenção",
     "categoria": "Azulejos",
     "descricao": "Azulejo personalizado com tema Outubro Rosa e mensagem de prevenção.",
     "imagem": "assets/img/produtos/azu-006",
@@ -608,7 +608,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "AZU-008",
-    "nome": "Placa de porta personalizada — Cores de Piatã, Edifício Coral, Apartamento 902",
+    "nome": "Placa de porta personalizada: Cores de Piatã, Edifício Coral, Apartamento 902",
     "categoria": "Azulejos",
     "descricao": "Placa decorativa personalizada para identificação de apartamento, com a identidade visual do Condomínio Cores de Piatã.",
     "imagem": "assets/img/produtos/azu-008",
@@ -621,7 +621,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "ECO-001",
-    "nome": "Ecobag e Necessaire • Maria, Passa na Frente",
+    "nome": "Ecobag e Necessaire “Maria, Passa na Frente”",
     "categoria": "Ecobags",
     "descricao": "Conjunto de ecobag e necessaire personalizado com imagem de Nossa Senhora e a frase “Maria, Passa na Frente”.",
     "imagem": "assets/img/produtos/eco-001",
@@ -635,7 +635,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "ECO-002",
-    "nome": "Ecobag e Camiseta • Nossa Senhora Aparecida",
+    "nome": "Ecobag e Camiseta Nossa Senhora Aparecida",
     "categoria": "Ecobags",
     "descricao": "Ecobag e camiseta com estampa azul de Nossa Senhora Aparecida.",
     "imagem": "assets/img/produtos/eco-002",
@@ -650,7 +650,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "CAM-001",
-    "nome": "Camisetas Religiosas • Rogai por Nós",
+    "nome": "Camisetas Religiosas Rogai por Nós",
     "categoria": "Religiosas",
     "descricao": "Camisetas personalizadas com diferentes artes religiosas de Nossa Senhora.",
     "imagem": "assets/img/produtos/cam-001",
@@ -663,7 +663,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "TOA-001",
-    "nome": "Toalhas Religiosas • Orixás",
+    "nome": "Toalhas Religiosas Orixás",
     "categoria": "Toalhas",
     "descricao": "Toalhas personalizadas com estampas temáticas de orixás e religiões de matriz africana.",
     "imagem": "assets/img/produtos/toa-001",
@@ -673,7 +673,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "TOA-002",
-    "nome": "Toalhas Personalizadas • Escolar e Comemorativa",
+    "nome": "Toalhas Personalizadas Escolar e Comemorativa",
     "categoria": "Toalhas",
     "descricao": "Toalhas personalizadas para lembranças religiosas, escolares e aniversários.",
     "imagem": "assets/img/produtos/toa-002",
@@ -682,7 +682,7 @@ window.SUBLIMAE_PRODUTOS = [
   },
   {
     "codigo": "MOU-001",
-    "nome": "Mouse Pad Personalizado • Redondo, Retangular e Ergonômico",
+    "nome": "Mouse Pad Personalizado Redondo, Retangular e Ergonômico",
     "categoria": "Mouse Pad",
     "descricao": "Mouse pads personalizados em formatos redondo, retangular e ergonômico, com tema à escolha, impressão de qualidade e base antiderrapante.",
     "imagem": "assets/img/produtos/mou-001",

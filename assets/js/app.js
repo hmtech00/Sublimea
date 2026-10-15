@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Sublimaê — Artes Personalizadas · catálogo, busca, galeria e lista de interesse
+   Sublimaê Artes Personalizadas: catálogo, busca, galeria e lista de interesse
    Observação: este site não exibe nem calcula preços em nenhuma parte.
    ========================================================================== */
 (function () {
@@ -100,7 +100,7 @@
       '<button type="button" class="card-photo' + (shouldContain(p) ? ' contain' : '') + '" data-view="' + esc(p.codigo) + '" aria-label="Ampliar foto: ' + esc(p.nome) + '">' +
         '<img src="' + esc(imgSm(p)) + '" srcset="' + esc(imgSm(p)) + ' ' + sz.w + 'w, ' + esc(imgLg(p)) + ' ' + p.largura + 'w" ' +
         'sizes="(max-width: 640px) 50vw, (max-width: 1100px) 33vw, 290px" width="' + sz.w + '" height="' + sz.h + '" ' +
-        'alt="' + esc(p.nome + ' — ' + p.codigo) + '" loading="' + lazy + '" decoding="async">' +
+        'alt="' + esc(p.nome + ', ref. ' + p.codigo) + '" loading="' + lazy + '" decoding="async">' +
         '<span class="zoom-hint">' + ICON_ZOOM + '</span>' +
       '</button>' +
       '<div class="card-body">' +
@@ -108,7 +108,7 @@
         '<h3>' + esc(p.nome) + '</h3>' +
         '<p class="card-desc">' + esc(p.descricao) + '</p>' +
         tagsHtml(p, 2) +
-        '<p class="custom-note">' + ICON_SPARK + 'Personalizável — consulte opções</p>' +
+        '<p class="custom-note">' + ICON_SPARK + 'Personalizável: consulte opções</p>' +
         '<div class="card-actions">' +
           '<a class="btn btn-wa" href="' + esc(waLink(msgProduto(p))) + '" target="_blank" rel="noopener noreferrer" aria-label="Consultar ' + esc(p.nome) + ' pelo WhatsApp">' + ICON_WA + 'Consultar pelo WhatsApp</a>' +
           '<button type="button" class="btn btn-outline" data-add="' + esc(p.codigo) + '">Adicionar à lista</button>' +
@@ -276,7 +276,7 @@
       ' Gostaria de solicitar um orçamento dos seguintes produtos do catálogo:\n\n';
     list.forEach(function (i) {
       var p = byCode[i.code];
-      msg += '• ' + i.qty + 'x ' + p.nome + ' — ref. ' + p.codigo + '\n';
+      msg += i.qty + 'x ' + p.nome + ' (ref. ' + p.codigo + ')\n';
     });
     if (note) msg += '\nObservações: ' + note + '\n';
     msg += '\nGostaria de saber mais sobre as opções de personalização.';
@@ -322,7 +322,7 @@
   function showProduct(p) {
     currentView = p;
     viewerImg.src = imgLg(p);
-    viewerImg.alt = p.nome + ' — ' + p.codigo;
+    viewerImg.alt = p.nome + ', ref. ' + p.codigo;
     viewerImg.width = p.largura;
     viewerImg.height = p.altura;
     $('#viewerCat').textContent = p.categoria;

@@ -1,4 +1,4 @@
-# Sublimaê — Artes Personalizadas · Site oficial
+# Sublimaê Artes Personalizadas | Site oficial
 
 Vitrine digital do catálogo Sublimaê, construída com HTML, CSS e JavaScript puros (sem frameworks e sem etapa de build).
 Este site **não exibe preços** em nenhuma parte: o visitante consulta os produtos e solicita orçamento pelo WhatsApp.
@@ -28,7 +28,7 @@ Depois acesse http://localhost:8765.
 
 ## Como publicar
 
-É um site estático: envie a pasta inteira (`index.html` + `assets/`) para qualquer hospedagem estática —
+É um site estático: envie a pasta inteira (`index.html` + `assets/`) para qualquer hospedagem estática:
 Netlify (arrastar a pasta em app.netlify.com/drop), Vercel, GitHub Pages, Cloudflare Pages ou a hospedagem do seu domínio via FTP.
 Após publicar com domínio próprio, troque `og:image` em `index.html` pelo endereço completo (ex.: `https://seudominio.com.br/assets/img/og-image.jpg`) para a prévia aparecer ao compartilhar o link.
 
