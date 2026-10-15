@@ -415,6 +415,15 @@
   document.addEventListener('click', function (e) {
     if (nav.classList.contains('open') && !e.target.closest('#mainNav, .menu-toggle')) closeMenu();
   });
+  // O cabeçalho é fixo (sticky), então a âncora #topo sozinha não rola a página
+  $$('a[href="#topo"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeMenu();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
   function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
