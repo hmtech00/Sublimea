@@ -467,7 +467,7 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
   .card-cat { font-size: 11px; max-width: 100%; }
   .card h3 { font-size: 15px; }
   .card-desc { font-size: 13px; -webkit-line-clamp: 2; }
-  .tags .tag:nth-child(n+2):not(.pack):not(.more) { display: none; }
+  .card .tag { font-size: 11px; padding: 3px 8px; }
   .custom-note { font-size: 12px; }
   .card-actions .btn { font-size: 13px; padding: 9px 6px; gap: 6px; min-height: 42px; }
   .card-actions .btn .wa-ico { width: 17px; height: 17px; }
