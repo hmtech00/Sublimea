@@ -73,3 +73,24 @@ collections:
     fields:
       - name: nome
         label: Nome da categoria
+
+  - name: instagram
+    label: Reels do Instagram
+    label_singular: Reel
+    description: Publicações exibidas na seção "Direto do nosso Instagram", acima do rodapé. Arraste para mudar a ordem; o ideal são 4.
+    file: /dados/instagram.json
+    identifier_field: link
+    summary: '{{link}}'
+    thumbnail: capa
+    media_folder: /assets/img/instagram
+    public_folder: /assets/img/instagram
+    fields:
+      - name: link
+        label: Link do reel ou post
+        hint: 'Copie o link no Instagram (Compartilhar > Copiar link). Ex.: https://www.instagram.com/reel/ABC123/'
+        pattern: ['^https://(www\.)?instagram\.com/(reel|p|tv)/[A-Za-z0-9_-]+', 'Cole um link de reel ou post do Instagram']
+      - name: capa
+        label: Imagem de capa
+        widget: image
+        required: false
+        hint: Print ou foto do reel, em pé (formato 3:4). Aparece até a pessoa clicar para assistir.

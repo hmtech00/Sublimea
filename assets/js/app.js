@@ -53,6 +53,69 @@
     return nomes;
   }
 
+  /* ---------- Reels do Instagram ---------- */
+  // Carregados à parte: se falharem, o catálogo continua funcionando
+  carregarJson('dados/instagram.json').then(iniciarInstagram).catch(function () {});
+
+  var instagramJs = null;
+  function carregarInstagramJs() {
+    if (window.instgrm) return Promise.resolve();
+    if (!instagramJs) {
+      instagramJs = new Promise(function (ok, erro) {
+        var sc = document.createElement('script');
+        sc.async = true;
+        sc.src = 'https://www.instagram.com/embed.js';
+        sc.onload = ok;
+        sc.onerror = erro;
+        document.body.appendChild(sc);
+      });
+    }
+    return instagramJs;
+  }
+
+  function iniciarInstagram(lista) {
+    var itens = (Array.isArray(lista) ? lista : []).filter(function (i) {
+      return i && /^https:\/\/(www\.)?instagram\.com\/(reel|p|tv)\/[\w-]+/.test(i.link || '');
+    });
+    var row = document.getElementById('igRow');
+    if (!itens.length || !row) return;
+    var esc = function (s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    };
+    row.innerHTML = itens.map(function (i) {
+      var link = i.link.split('?')[0];
+      var capa = String(i.capa || '').replace(/^\/+/, '');
+      return '<div class="ig-item" data-url="' + esc(link) + '">' +
+        '<a class="ig-play-card" href="' + esc(link) + '" target="_blank" rel="noopener noreferrer" aria-label="Assistir publicação da Sublimaê no Instagram">' +
+          (capa ? '<img src="' + esc(capa) + '" alt="Publicação da Sublimaê no Instagram" loading="lazy" decoding="async">' : '') +
+          '<span class="ig-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>' +
+          '<span class="ig-cta">Assistir aqui</span>' +
+        '</a>' +
+        '<a class="ig-open" href="' + esc(link) + '" target="_blank" rel="noopener noreferrer">Abrir no Instagram ↗</a>' +
+      '</div>';
+    }).join('');
+    document.getElementById('instagram').hidden = false;
+
+    // O vídeo do Instagram só é carregado quando a pessoa clica
+    row.addEventListener('click', function (e) {
+      var a = e.target.closest('.ig-play-card');
+      if (!a || navigator.onLine === false) return;
+      e.preventDefault();
+      var item = a.parentNode;
+      a.querySelector('.ig-cta').textContent = 'Carregando…';
+      carregarInstagramJs().then(function () {
+        var bq = document.createElement('blockquote');
+        bq.className = 'instagram-media';
+        bq.setAttribute('data-instgrm-permalink', item.dataset.url + '?utm_source=ig_embed');
+        bq.setAttribute('data-instgrm-version', '14');
+        a.replaceWith(bq);
+        window.instgrm.Embeds.process();
+      }).catch(function () { window.open(item.dataset.url, '_blank', 'noopener'); });
+    });
+  }
+
   function iniciar(listaProdutos, listaCategorias, falhou) {
 
     var PRODUTOS = limparProdutos(listaProdutos);
